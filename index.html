@@ -859,11 +859,14 @@
   fbq('track', 'PageView');
 
   function trackCheckout(){
-    fbq('track', 'InitiateCheckout', {
-      content_name: 'L\'Art du Plaisir Masculin',
-      content_ids: ['P2-T'],
-      value: 16.01,
-      currency: 'EUR'
+    <script>
+  fbq('track', 'ViewContent', {
+    value: plaiz,
+    currency: 'euro',
+    content_ids: '02',
+    content_type: 'page produit',
+  });
+</script>
     });
   }
 
