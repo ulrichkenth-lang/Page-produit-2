@@ -859,14 +859,11 @@
   fbq('track', 'PageView');
 
   function trackCheckout(){
-    <script>
-  fbq('track', 'ViewContent', {
-    value: plaiz,
-    currency: 'euro',
-    content_ids: '02',
-    content_type: 'page produit',
-  });
-</script>
+    fbq('track', 'InitiateCheckout', {
+      value: 16.01,
+      currency: 'EUR',
+      content_ids: ['02'],
+      content_type: 'product'
     });
   }
 
